@@ -22,6 +22,24 @@ namespace Statistics
             bool ledGlows = false;
         }
 
+          public class StatsAlerter
+        {
+            public float maxThreshold;
+            public EmailAlert alerter1;
+            public LEDAlert alerter2;
+
+            public void checkAndAlert(float values)
+            {
+                Stats statisticresult = new Stats();
+                //Stats statisticresult = CalculateStatistics(new List<float> );
+
+                if (statisticresult.Maximum > maxThreshold)
+                {
+                    alerter1.emailSent = true;
+                    alerter2.ledGlows = true;
+                }
+            }
+        }
         
           public Stats CalculateStatistics(List<float> numbers)
         {
