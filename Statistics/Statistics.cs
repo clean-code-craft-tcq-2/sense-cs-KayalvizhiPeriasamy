@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Statistics.Test
+using Statistics.Test;
 
 namespace Statistics
 {
@@ -8,7 +8,14 @@ namespace Statistics
     {
         public Stats CalculateStatistics(List<float> numbers) {
             //Implement statistics here
-            Alert("Hi");
+              Stats obj = new Stats();
+            obj.a = 1;
+            return obj;
         }
+        
+    public class Stats
+    {
+        public int a;
+    }
     }
 }
