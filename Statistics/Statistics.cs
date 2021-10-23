@@ -7,6 +7,7 @@ namespace Statistics
     {
         public Stats CalculateStatistics(List<float> numbers) {
             //Implement statistics here
+            Alert("Hi");
         }
     }
 }
